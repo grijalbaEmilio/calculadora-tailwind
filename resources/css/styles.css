@@ -1,0 +1,97 @@
+:root {
+    --font-container: "Roboto", sans-serif;
+    --text-color: rgb(243, 243, 243);
+    --bg-container: rgb(207, 216, 220);
+    --bg-display: rgb(233, 233, 233);
+  
+    --bg-operand: rgb(144, 164, 174);
+    --bg-operand-hover: rgb(120, 144, 156);
+  
+    --bg-operator: rgb(84, 110, 122);
+    --bg-operator-hover: rgb(69, 90, 100);
+  
+    --bg-equals: rgb(76, 175, 80);
+    --bg-equals-hover: rgb(52, 153, 56);
+  
+    --bg-clear: rgb(244, 67, 54);
+    --bg-clear-hover: rgb(229, 57, 53);
+}
+
+.container {
+    width: max-content;
+    margin: auto;
+    background: var(--bg-container);
+    padding-top: 1em;
+    font-family: var(--font-container);
+    border: none;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+.display {
+  width: 91%;
+  background-color: var(--bg-display);
+  height: 50px;
+  font-size: 35px;
+  border: none;
+  border-radius: 5px;
+  outline: none !important;
+  padding: 0.5em 0.2em 0.2em 0.2em;
+  display: flex;
+  margin: auto;
+  text-align: right;
+}
+
+.buttons {
+  margin: 0.3em;
+  max-width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  flex: 1 20%;
+  padding: 15px;
+  font-size: 26px;
+  margin: 0.3em;
+  border: none;
+  border-radius: 5px;
+  outline: none !important;
+  transition: all 0.1s;
+}
+
+.btn-operand {
+  background-color: var(--bg-operand);
+}
+
+.btn-operand:hover {
+  background-color: var(--bg-operand-hover);
+}
+
+.btn-operator {
+  background-color: var(--bg-operator);
+  color: var(--text-color);
+}
+
+.btn-operator:hover {
+  background-color: var(--bg-operator-hover);
+}
+
+.btn-equals {
+  background-color: var(--bg-equals);
+  color: var(--text-color);
+}
+
+.btn-equals:hover {
+  background-color: var(--bg-equals-hover);
+  color: var(--text-color);
+}
+
+.btn-clear, .btn-borrar {
+  background-color: var(--bg-clear);
+  color: var(--text-color);
+}
+
+.btn-clear:hover, .btn-borrar:hover {
+  background-color: var(--bg-clear-hover);
+}

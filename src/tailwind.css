@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-container: "Roboto", sans-serif;
+  --text-color: rgb(243, 243, 243);
+  --bg-container: rgb(207, 216, 220);
+  --bg-display: rgb(233, 233, 233);
+
+  --bg-operand: rgb(144, 164, 174);
+  --bg-operand-hover: rgb(120, 144, 156);
+
+  --bg-operator: rgb(84, 110, 122);
+  --bg-operator-hover: rgb(69, 90, 100);
+
+  --bg-equals: rgb(76, 175, 80);
+  --bg-equals-hover: rgb(52, 153, 56);
+
+  --bg-clear: rgb(244, 67, 54);
+  --bg-clear-hover: rgb(229, 57, 53);
+}
+  @layer base {
+    h1 {
+      @apply text-3xl text-primary-dark tracking-tighter leading-10;
+    }
+    h2 {
+      @apply text-2xl text-primary tracking-tight leading-10;
+    }
+    h3 {
+      @apply italic text-xl text-primary leading-10;
+    }
+    p {
+      @apply text-primary;
+    }
+    #content a {
+      @apply no-underline text-blue-700 hover:underline;
+    }
+  }
+
+button{
+   @apply h-[61px] w-[21.4%] p-[15px] text-[26px] m-[0.3em] rounded-[5px] outline-none transition-all text-center items-center flex justify-center;
+}
+
+.bg-container{
+  background-color: var(--bg-container);
+}
+
+.bg-display{
+  background-color: var(--bg-display);
+}
+
+.btn-operand {
+   background-color: var(--bg-operand);
+}
+
+.btn-operand:hover {
+  background-color: var(--bg-operand-hover);
+}
+
+.btn-operator {
+  background-color: var(--bg-operator);
+  color: var(--text-color);
+}
+
+.btn-operator:hover {
+  background-color: var(--bg-operator-hover);
+}
+
+.btn-equals {
+  background-color: var(--bg-equals);
+  color: var(--text-color);
+}
+
+.btn-equals:hover {
+  background-color: var(--bg-equals-hover);
+  color: var(--text-color);
+}
+
+.btn-clear, .btn-borrar {
+  background-color: var(--bg-clear);
+  color: var(--text-color);
+}
+
+.btn-clear:hover, .btn-borrar:hover {
+  background-color: var(--bg-clear-hover);
+}
